@@ -1,0 +1,22 @@
+[
+  {
+    "src": "media/Test.mp4",
+    "type": "video",
+    "caption": "Engagement clip"
+  },
+  {
+    "src": "media/Test copy.mp4",
+    "type": "video",
+    "caption": "Celebration video"
+  },
+  {
+    "src": "media/WhatsApp Image 2026-02-15 at 20.59.00.jpeg",
+    "type": "image",
+    "caption": "Family moment"
+  },
+  {
+    "src": "media/WhatsApp Image 2026-02-21 at 22.30.16.jpeg",
+    "type": "image",
+    "caption": "Blessings"
+  }
+]
