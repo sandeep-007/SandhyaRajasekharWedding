@@ -69,6 +69,7 @@
   "countdown": {
     "title": "Counting Down To",
     "subtitle": "The Beginning of Forever",
+    "completed": "Married!",
     "units": {
       "days": "Days",
       "hours": "Hours",

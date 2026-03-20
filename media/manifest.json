@@ -1,22 +1,118 @@
 [
   {
-    "src": "media/Test.mp4",
-    "type": "video",
-    "caption": "Engagement clip"
+    "src": "media/PRK03885.JPG",
+    "type": "image"
   },
   {
-    "src": "media/Test copy.mp4",
-    "type": "video",
-    "caption": "Celebration video"
+    "src": "media/PRK04215.JPG",
+    "type": "image"
   },
   {
-    "src": "media/WhatsApp Image 2026-02-15 at 20.59.00.jpeg",
-    "type": "image",
-    "caption": "Family moment"
+    "src": "media/PRK04344.JPG",
+    "type": "image"
   },
   {
-    "src": "media/WhatsApp Image 2026-02-21 at 22.30.16.jpeg",
-    "type": "image",
-    "caption": "Blessings"
+    "src": "media/PRK04358.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/CHA09769.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/CHA09846.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/CHA09853.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/CHA09882.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/CHA09925.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/CHA09948.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/CHA09970.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK03843.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK03855.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK03891.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK03982.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04090.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04096.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04170.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04200.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04216.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04220.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04337.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04339.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04345.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04347.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04350.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04353.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04355.JPG",
+    "type": "image"
+  },
+  {
+    "src": "media/PRK04359.JPG",
+    "type": "image"
   }
 ]
