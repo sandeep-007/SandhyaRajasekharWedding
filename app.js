@@ -958,10 +958,33 @@ const MemoryWallSection = ({ mediaItems, content }) => {
     };
   }, [activeImage]);
 
+
+  useEffect(() => {
+  if (!mediaItems.length) return;
+
+  const preloadImages = () => {
+    mediaItems.slice(0, 10).forEach((item) => {
+      if (item.type === "image") {
+        const img = new Image();
+        img.src = item.src;
+      }
+    });
+  };
+
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(preloadImages);
+  } else {
+    setTimeout(preloadImages, 2000);
+  }
+}, [mediaItems]);
+
   const previewCandidates = mediaItems.filter((item) => item.type === "image");
+
+  const baseItems = previewCandidates.length ? previewCandidates : mediaItems;
+
   const previewItems = isCompact
-    ? previewCandidates.slice(0, 3)
-    : (previewCandidates.length ? previewCandidates : mediaItems).slice(0, 8);
+    ? baseItems.slice(0, 3)
+    : baseItems.slice(0, 8);
   const renderMediaCard = (item, key) =>
     e(
       "div",
@@ -1022,7 +1045,9 @@ const MemoryWallSection = ({ mediaItems, content }) => {
                 setShowAll((current) => !current);
               },
             },
-            showAll ? content.memoryWall.showPreview : content.memoryWall.viewAll,
+            showAll
+              ? content.memoryWall.showPreview
+              : content.memoryWall.viewAll,
           ),
         ),
         e(
@@ -1046,42 +1071,54 @@ const MemoryWallSection = ({ mediaItems, content }) => {
             : isCompact
               ? e(
                   "div",
-                  {
-                    className: "memory-mobile-placeholder font-body",
-                    style: { color: "hsl(var(--muted-foreground))" },
-                  },
-                  content.memoryWall.viewAll,
+                  { className: "memory-wall compact" },
+                  previewItems.map((item, index) =>
+                    renderMediaCard(item, `${item.src}-${index}`),
+                  ),
                 )
-            : e(
-                "div",
-                {
-                  className: `memory-wall preview${isCompact ? " compact" : ""}`,
-                },
+              : // isCompact
+                //   ? e(
+                //       "div",
+                //       {
+                //         className: "memory-mobile-placeholder font-body",
+                //         style: { color: "hsl(var(--muted-foreground))" },
+                //       },
+                //       content.memoryWall.viewAll,
+                //     )
                 e(
                   "div",
-                  { className: "memory-track" },
-                  [...previewItems, ...previewItems].map((item, index) =>
-                    item.type === "video"
-                      ? e(
-                          "div",
-                          {
-                            key: `${item.src}-${index}`,
-                            className: "memory-card",
-                          },
-                          e("video", {
-                            src: item.src,
-                            muted: true,
-                            loop: true,
-                            autoPlay: true,
-                            playsInline: true,
-                            preload: "metadata",
-                          }),
-                          e("div", { className: "memory-caption" }, item.caption),
-                        )
-                      : renderMediaCard(item, `${item.src}-${index}`),
+                  {
+                    className: `memory-wall preview${isCompact ? " compact" : ""}`,
+                  },
+                  e(
+                    "div",
+                    { className: "memory-track" },
+                    [...previewItems, ...previewItems].map((item, index) =>
+                      item.type === "video"
+                        ? e(
+                            "div",
+                            {
+                              key: `${item.src}-${index}`,
+                              className: "memory-card",
+                            },
+                            e("video", {
+                              src: item.src,
+                              muted: true,
+                              loop: true,
+                              autoPlay: true,
+                              playsInline: true,
+                              preload: "metadata",
+                            }),
+                            e(
+                              "div",
+                              { className: "memory-caption" },
+                              item.caption,
+                            ),
+                          )
+                        : renderMediaCard(item, `${item.src}-${index}`),
+                    ),
                   ),
-                ),
-              )
+                )
           : e(
               "p",
               {
