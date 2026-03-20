@@ -92,15 +92,15 @@
     "empty": "Add photos or videos to the media folder to see them here."
   },
   "rsvp": {
-    "title": "RSVP",
-    "subtitle": "Kindly honour us with your response",
+    "title": "Wishes & Blessings",
+    "subtitle": "Your blessings mean the world to us",
     "fullNamePlaceholder": "Full Name",
     "phonePlaceholder": "Phone Number",
-    "messagePlaceholder": "Your Blessings & Message",
-    "submit": "Send RSVP",
-    "mailNote": "Submitting will open your email app to send the RSVP.",
+    "messagePlaceholder": "Your Message",
+    "submit": "Send",
+    "mailNote": "Submitting will open your whatsApp messenged app to send.",
     "thankYouTitle": "Thank You!",
-    "thankYouNote": "Your response has been recorded. We look forward to celebrating with you!"
+    "thankYouNote": "Thank you for your blessings, We are truly grateful for your love and wishes"
   },
   "footer": {
     "names": "Sandhya & Rajasekhar",
