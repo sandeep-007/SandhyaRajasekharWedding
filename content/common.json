@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "verse": "\"So they are no longer two but one, therefore what God has joined together let man not separate\"",
+    "verseRef": "— Matthew 19:6",
+    "title": "Holy Matrimony",
+    "brideName": "Sandhya",
+    "groomName": "Rajasekhar",
+    "cta": "✨ View Wedding Details ✨",
+    "subtitle": "Enters the Holy Wedlock with"
+  },
+  "tabs": {
+    "english": "English",
+    "telugu": "తెలుగు",
+    "kannada": "Kannada"
+  },
+  "countdown": {
+    "title": "Counting Down To",
+    "subtitle": "The Beginning of Forever",
+    "completed": "Married!",
+    "units": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    }
+  },
+  "venue": {
+    "weddingTitle": "Wedding Venue",
+    "weddingLocation": "MG Convention, Kanchikacherla",
+    "engagementTitle": "Engagement Venue",
+    "engagementLocation": "New Jerusalem Church (Telugu Church)",
+    "directionsLabel": "Get Directions"
+  },
+  "memoryWall": {
+    "title": "Memory Wall",
+    "note": "Place your photos and videos inside the media folder to showcase them here.",
+    "viewAll": "View All",
+    "showPreview": "Show Preview",
+    "empty": "Add photos or videos to the media folder to see them here."
+  },
+  "rsvp": {
+    "title": "Wishes & Blessings",
+    "subtitle": "Your blessings mean the world to us",
+    "fullNamePlaceholder": "Full Name",
+    "phonePlaceholder": "Phone Number",
+    "messagePlaceholder": "Your Message",
+    "submit": "Send",
+    "mailNote": "Submitting will open your WhatsApp messenger app to send.",
+    "thankYouTitle": "Thank You!",
+    "thankYouNote": "Thank you for your blessings, We are truly grateful for your love and wishes"
+  },
+  "footer": {
+    "names": "Sandhya & Rajasekhar",
+    "date": "30 March 2026"
+  }
+}

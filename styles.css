@@ -92,6 +92,24 @@ a {
   background-clip: text;
 }
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 100, 100, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 100, 100, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 100, 100, 0);
+  }
+}
+
+.cta-flicker {
+  animation: pulse 1.5s infinite;
+}
+
 .royal-divider {
   height: 1px;
   background: linear-gradient(90deg,

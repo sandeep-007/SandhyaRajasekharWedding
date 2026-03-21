@@ -3,6 +3,7 @@ const { useState, useEffect } = React;
 const e = React.createElement;
 
 const RSVP_PHONE = "918142147303";
+const COMMON_CONTENT_FILE = "content/common.json";
 const CONTENT_FILES = {
   english: "content/english.json",
   telugu: "content/telugu.json",
@@ -37,6 +38,24 @@ const prettifyCaption = (filename = "") =>
     .replace(/[-_]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+
+const isPlainObject = (value) =>
+  value && typeof value === "object" && !Array.isArray(value);
+
+const deepMerge = (base = {}, override = {}) => {
+  const result = { ...base };
+  Object.keys(override || {}).forEach((key) => {
+    const baseValue = result[key];
+    const overrideValue = override[key];
+
+    if (isPlainObject(baseValue) && isPlainObject(overrideValue)) {
+      result[key] = deepMerge(baseValue, overrideValue);
+    } else {
+      result[key] = overrideValue;
+    }
+  });
+  return result;
+};
 
 const normalizeMediaItems = (items = []) =>
   items
@@ -173,6 +192,16 @@ const HeroSection = ({ onViewDetails, content }) => {
     scrollToElementWithOffset("english-invite", 24);
   };
 
+  const [highlight, setHighlight] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setHighlight(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return e(
     "section",
     { className: "hero" },
@@ -254,7 +283,10 @@ const HeroSection = ({ onViewDetails, content }) => {
       e(GoldOrnament, { className: "my-8" }),
       e(
         "button",
-        { className: "cta-button", onClick: scrollToDetails },
+        {
+          className: `cta-button ${highlight ? "cta-flicker" : ""}`,
+          onClick: scrollToDetails,
+        },
         content.hero.cta,
       ),
     ),
@@ -958,25 +990,24 @@ const MemoryWallSection = ({ mediaItems, content }) => {
     };
   }, [activeImage]);
 
-
   useEffect(() => {
-  if (!mediaItems.length) return;
+    if (!mediaItems.length) return;
 
-  const preloadImages = () => {
-    mediaItems.slice(0, 10).forEach((item) => {
-      if (item.type === "image") {
-        const img = new Image();
-        img.src = item.src;
-      }
-    });
-  };
+    const preloadImages = () => {
+      mediaItems.slice(0, 10).forEach((item) => {
+        if (item.type === "image") {
+          const img = new Image();
+          img.src = item.src;
+        }
+      });
+    };
 
-  if ("requestIdleCallback" in window) {
-    requestIdleCallback(preloadImages);
-  } else {
-    setTimeout(preloadImages, 2000);
-  }
-}, [mediaItems]);
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(preloadImages);
+    } else {
+      setTimeout(preloadImages, 2000);
+    }
+  }, [mediaItems]);
 
   const previewCandidates = mediaItems.filter((item) => item.type === "image");
 
@@ -1406,13 +1437,19 @@ const App = () => {
 
   useEffect(() => {
     const loadAll = async () => {
-      const [english, telugu, kannada, media] = await Promise.all([
-        fetchJson(CONTENT_FILES.english),
-        fetchJson(CONTENT_FILES.telugu),
-        fetchJson(CONTENT_FILES.kannada),
+      const [common, english, telugu, kannada, media] = await Promise.all([
+        fetchJson(COMMON_CONTENT_FILE, {}),
+        fetchJson(CONTENT_FILES.english, {}),
+        fetchJson(CONTENT_FILES.telugu, {}),
+        fetchJson(CONTENT_FILES.kannada, {}),
         loadMediaItems(),
       ]);
-      setContentMap({ english, telugu, kannada });
+      const mergedContent = {
+        english: deepMerge(common, english),
+        telugu: deepMerge(common, telugu),
+        kannada: deepMerge(common, kannada),
+      };
+      setContentMap(mergedContent);
       setMediaItems(Array.isArray(media) ? media : []);
     };
     loadAll();

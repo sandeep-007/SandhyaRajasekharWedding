@@ -1,109 +1,27 @@
 {
-  "hero": {
-    "verse": "\"So they are no longer two but one, therefore what God has joined together let man not separate\"",
-    "verseRef": "— Matthew 19:6",
-    "title": "Holy Matrimony",
-    "brideName": "Sandhya",
-    "groomName": "Rajasekhar",
-    "cta": "✨ View Wedding Details ✨",
-    "subtitle": "Enters the Holy Wedlock with"
-  },
-  "tabs": {
-    "english": "English",
-    "telugu": "Telugu",
-    "kannada": "Kannada"
-  },
-  "englishInvite": {
-    "intro": "We entreat you to honour us with your gracious presence as our only Daughter",
-    "brideName": "Sandhya",
-    "groomName": "Rajasekhar",
-    "lineage": "(Younger son of Sri Venkateswara Rao Talasila, Smt. Chandrakala Talasila\nOf Ponnavaram, Kanchikacherla, Andhra Pradesh - 521180)",
-    "weddingBells": "💍 Wedding Bells",
-    "weddingDate": "Monday, 30th March 2026 at 11:00 AM",
-    "venueTitle": "Venue",
-    "venueAddress": "MG Convention,\nGovt Hospital, Road NH65,\nKanchikacherla, Andhra Pradesh 521180",
-    "lunchTitle": "Lunch",
-    "lunchTime": "Monday, 30th March 2026 at 12:00 PM",
-    "withLove": "With Love & Regards",
-    "withLoveNames": "Sri. Tarakeswar Rao Gedala, Smt. Rupa Gedala",
-    "withLoveNote": "With Best Compliments from Near & Dear"
-  },
   "teluguInvite": {
     "verse": "\"ఇది యెహోవావలన కలిగిన కార్యము\"",
     "verseRef": "— ఆది 24:50",
-    "title": "గేదల వారి వివాహ ఆహ్వానం",
+    "title": "గేదెల వారి వివాహ ఆహ్వానం",
     "subtitle": "మా ఎకైక కుమార్తె",
     "brideName": "సంధ్య",
     "brideLine": "వధువు: చి,, సౌ,, సంధ్య ని",
     "groomLine": "వరుడు: చి,, రాజశేఖర్ కు",
-    "lineage": "(శ్రీ వెంకటేశ్వరరావు తలసిలా & శ్రీమతి చంద్రకలా తలసిలా గార్ల రెండవ కుమారుడు)",
+    "lineage": "(శ్రీ వెంకటేశ్వరరావు తలశీల & శ్రీమతి చంద్రకలా తలశీల గార్ల రెండవ కుమారుడు)",
     "timeTitle": "వివాహ సమయం",
-    "timeDetails": "ది. ౩౦-౦౩-౨౦౨౬ సోమవారం\nఉదయం ౧౦-౦౦ గంటలకు",
+    "timeDetails": "ది. ౩౦-౦౩-2026 సోమవారం\nఉదయం 11:00 గంటలకు",
     "venueTitle": "వివాహ వేదిక",
-    "venueDetails": "ఎం జి కన్వెన్షన్\nప్రభుత్వ ఆసుపత్రి, రోడ్డు ఎన్ హెచ్ ౬౫, కంచికచెర్ల, ఆంధ్రప్రదేశ్ ౫౨౧౧౮౦",
+    "venueDetails": "ఎం జి కన్వెన్షన్\nప్రభుత్వ ఆసుపత్రి, రోడ్డు ఎన్ హెచ్ 65, కంచికచర్ల, ఆంధ్రప్రదేశ్ 521180",
     "lunchTitle": "విందు",
-    "lunchDetails": "మధ్యాహ్నం ౧౨-౦౦ గంటల నుండి",
+    "lunchDetails": "మధ్యాహ్నం 12:00 గంటల నుండి",
     "inviteTitle": "ప్రేమతో ఆహ్వనించువారు",
     "inviteNames": "శ్రీ తారకేశ్వర్ రావు గేదెల (తిమోతికి) & శ్రీమతి రూపా గేదెల",
     "inviteNote": "బంధుమిత్రుల అభినందనలతో…"
   },
-  "kannadaInvite": {
-    "verse": "\"ಇದು ಯೆಹೋವನಿಂದ ಸಂಭವಿಸಿದ ಕಾರ್ಯವು\"",
-    "verseRef": "— ಆದಿಕಾಂಡ 24:50",
-    "title": "ಗೇದಲ ಕುಟುಂಬದ ವಿವಾಹ ಆಹ್ವಾನ",
-    "subtitle": "ನಮ್ಮ ಏಕೈಕ ಪುತ್ರಿ",
-    "brideName": "ಸಂಧ್ಯಾ",
-    "brideLine": "ವಧು: ಚಿ., ಸೌ., ಸಂಧ್ಯಾ",
-    "groomLine": "ವರ: ಚಿ., ರಾಜಶೇಖರ್",
-    "lineage": "(ಶ್ರೀ ವೆಂಕಟೇಶ್ವಕರರಾವ್ ತಲಸಿಲಾ ಹಾಗೂ ಶ್ರೀమತಿ ಚಂದ್ರಕಲಾ ತలಸಿಲಾ ಅವರ ಎರಡನೇ ಪುತ್ರ)",
-    "timeTitle": "ವಿವಾಹ ಸಮಯ",
-    "timeDetails": "ದಿ. 30-03-2026 ಸೋಮವಾರ\nಬೆಳಿಗ್ಗೆ 10:00 ಗಂಟೆಗೆ",
-    "venueTitle": "ವಿವಾಹ ಸ್ಥಳ",
-    "venueDetails": "ಎಂ ಜಿ ಕನ್ವೆನ್ಷನ್\nಸರಕಾರಿ ಆಸ್ಪತ್ರೆ ರಸ್ತೆ, ಎನ್ ಹೆಚ್ 65, ಕಂಚಿಕಚೆರ್ಲ, ಆಂಧ್ರ ಪ್ರದೇಶ – 521180",
-    "lunchTitle": "ಊಟ",
-    "lunchDetails": "ಮಧ್ಯಾಹ್ನ 12:00 ಗಂಟೆಯಿಂದ",
-    "inviteTitle": "ಪ್ರೀತಿಯಿಂದ ಆಹ್ವಾನಿಸುವವರು",
-    "inviteNames": "ಶ್ರೀ ತಾರಕೇಶ್ವರ రಾವ್ ಗೇದಲ (ತಿಮೋತಿ ಅವರಿಗೆ) ಹಾಗೂ ಶ್ರೀಮತಿ ರೂಪಾ ಗೇದಲ",
-    "inviteNote": "ಬಂಧು ಮಿತ್ರರ ಅಭಿನಂದನೆಗಳೊಂದಿಗೆ…"
-  },
   "countdown": {
-    "title": "Counting Down To",
-    "subtitle": "The Beginning of Forever",
-    "completed": "వివాహం జరిగింది!",
-    "units": {
-      "days": "Days",
-      "hours": "Hours",
-      "minutes": "Minutes",
-      "seconds": "Seconds"
-    }
-  },
-  "venue": {
-    "weddingTitle": "Wedding Venue",
-    "weddingLocation": "MG Convention, Kanchikacherla",
-    "engagementTitle": "Engagement Venue",
-    "engagementLocation": "New Jerusalem Church (Telugu Church)",
-    "directionsLabel": "Get Directions"
-  },
-  "memoryWall": {
-    "title": "Memory Wall",
-    "note": "Place your photos and videos inside the media folder to showcase them here.",
-    "viewAll": "View All",
-    "showPreview": "Show Preview",
-    "empty": "Add photos or videos to the media folder to see them here."
+    "completed": "వివాహం జరిగింది!"
   },
   "rsvp": {
-    "title": "Wishes & Blessings",
-    "subtitle": "Your blessings mean the world to us",
-    "fullNamePlaceholder": "Full Name",
-    "phonePlaceholder": "Phone Number",
-    "messagePlaceholder": "Your Message",
-    "submit": "Send",
-    "mailNote": "Submitting will open your whatsApp messenged app to send.",
-    "thankYouTitle": "Thank You!",
-    "thankYouNote": "Thank you for your blessings, We are truly grateful for your love and wishes"
-  },
-  "footer": {
-    "names": "Sandhya & Rajasekhar",
-    "date": "30 March 2026"
+    "mailNote": "Submitting will open your WhatsApp messenger app to send."
   }
 }
